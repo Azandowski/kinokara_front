@@ -1,0 +1,16 @@
+.About {
+    background-color: #000;
+    padding: 4px 40px;
+    padding-bottom: 40px;
+    color: var(--text);
+    font-family: "Ubuntu";
+}
+.About p {
+    font-weight: 300;
+    opacity: 0.7;
+}
+@media (max-width: 800px) {
+    .About  {
+        padding: 4px 5%;
+    }
+}

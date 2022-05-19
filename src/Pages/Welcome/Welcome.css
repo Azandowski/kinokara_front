@@ -1,0 +1,70 @@
+.Auth {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f0f;
+    color: white;
+    font-family: "Ubuntu";
+}
+
+.Auth .Content {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.Auth .inner-content {
+    background-color: rgb(39, 37, 37);
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    border-radius: 16px;
+    min-width: calc(40% - 35px);
+}
+
+.Auth .inner-content input {
+    padding: 16px 24px;
+    background-color: white;
+    border: #c7c3c3f6 1px solid;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.Auth .inner-content button {
+    padding: 16px 24px;
+    border: none;
+    background-color: rgb(196, 185, 185);
+    font-size: 14px;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+
+.Auth .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.Auth .subtitle {
+    margin-bottom: 16px;
+}
+
+.Auth .no-account {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.7;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Auth button:hover {
+    background-color: #474747;
+    color: white;
+}

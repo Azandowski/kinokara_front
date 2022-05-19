@@ -1,0 +1,47 @@
+.MovieLayout {
+    background-color: #000;
+    color: var(--text);
+    padding: 40px;
+}
+.SectionHorizontal {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.SectionHorizontal::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.SectionHorizontal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-x: scroll;
+}
+.MovieLayout h1 {
+    font-family: "Ubuntu";
+}
+.ready {
+    color: #FFF;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.ready__disabled {
+    background-color: rgb(112, 112, 112);
+    opacity: 0.3;
+}
+.ready__active {
+    background-color: var(--secondary);
+}
+
+
+@media (max-width: 800px) {
+    .MovieLayout {
+        padding: 40px 5%;
+    }
+}

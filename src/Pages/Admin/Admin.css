@@ -1,0 +1,38 @@
+.Admin {
+    min-height: calc(100vh - 80px);
+    height: calc(100% - 80px);
+    width: 84%;
+    padding: 40px 8%;
+    background-color: #0f0f0f;
+    color: white;
+    font-family: "Ubuntu";
+}
+
+.users-list .title {
+    font-size: 20px;
+}
+
+.users-list .users {
+    margin-top: 20px;
+}
+
+.users .user {
+    padding: 16px;
+    background-color: #20202088;
+    border-bottom: 1px solid #c2c1c188;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.users .user .controls {
+    font-size: 14px;
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.users .user .controls #remove {
+    padding-top: 8px;
+    color: red;
+}
