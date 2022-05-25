@@ -122,6 +122,69 @@ class Api {
             })
         }).then(response => response.json());
     }
+
+    addPost = (value, review) => {
+        let url = "https://kinokara.herokuapp.com/auth/post"
+        return fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': localStorage.getItem('token')
+            },
+            body: JSON.stringify({
+                "value": value,
+                "review": review
+            })
+        }).then(response => response.json());
+    }
+
+    getPosts = () => {
+        let url = "https://kinokara.herokuapp.com/auth/posts"
+        return fetch(url, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': localStorage.getItem('token')
+            },
+        }).then(response => response.json());
+    }
+
+    getAdminPosts = () => {
+        let url = "https://kinokara.herokuapp.com/auth/checkposts"
+        return fetch(url, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': "Bearer " + localStorage.getItem('token')
+            },
+        }).then(response => response.json());
+    }
+
+    declinePost = (id) => {
+        let url = "https://kinokara.herokuapp.com/auth/declinepost"
+        return fetch(url, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': "Bearer " + localStorage.getItem('token')
+            },
+            body: JSON.stringify({
+                "postId": id,
+            })
+        }).then(response => response.json());
+    }
+
+    acceptPost = (id) => {
+        let url = "https://kinokara.herokuapp.com/auth/acceptpost"
+        return fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': "Bearer " + localStorage.getItem('token')
+            },
+            body: JSON.stringify({
+                "postId": id,
+            })
+        }).then(response => response.json());
+    }
 }
 
 

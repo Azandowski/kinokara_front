@@ -1,0 +1,84 @@
+.Review {
+    min-height: calc(100vh - 80px);
+    height: calc(100% - 80px);
+    width: 84%;
+    padding: 40px 8%;
+    background-color: #0f0f0f;
+    color: white;
+    font-family: "Ubuntu";
+}
+
+.leave-feedback {
+    display: flex;
+    flex-direction: column;
+}
+
+.leave-feedback .review-field {
+    margin-top: 20px;
+    padding: 24px;
+    background-color: #373737;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+.leave-feedback .row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+
+.leave-feedback .row .submit {
+    margin-left: 16px;
+    border: none;
+    padding: 12px 16px;
+    background-color: #222121;
+    color: white;
+    font-size: 16px;
+}
+
+.review {
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(122, 122, 122);
+}
+
+
+.review .top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review p {
+    font-weight: 14px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.top-back {
+    font-size: 14px;
+    color: #636363;
+}
+
+.admin-tools {
+    margin-top: 10px;
+}
+
+.admin-tools #accept {
+    background-color: rgb(146, 255, 146);
+    color: black;
+    border: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-right: 16px;
+}
+
+.admin-tools #decline {
+    background-color: rgb(248, 127, 127);
+    color: black;
+    border: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-right: 16px;
+}

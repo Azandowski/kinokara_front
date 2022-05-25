@@ -19,6 +19,7 @@ import Admin from './Pages/Admin/Admin'
 
 import Recommendations from './Pages/Recommendations/Recommendations'
 import Welcome from './Pages/Welcome/Welcome';
+import Review from './Pages/Review/Review';
 
 const store = createStore(reducers)
 
@@ -32,6 +33,7 @@ function App() {
             <Route exact path="/" component={Recommendations}/>
             <Route exact path="/list" component={Home} />
             <Route exact path="/admin" component={Admin} />
+            <Route exact path="/review" component={Review} />
         </Switch> : <Switch>
             <Route exact path="/" component={Welcome}/>
             <Route exact path="/auth" component={Welcome} />

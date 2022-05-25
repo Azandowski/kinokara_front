@@ -36,3 +36,21 @@
     padding-top: 8px;
     color: red;
 }
+
+
+.Admin .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Admin .posts {
+    border: none;
+    background-color: transparent;
+    color: rgb(89, 87, 238);
+    padding: 0;
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 20px;
+}

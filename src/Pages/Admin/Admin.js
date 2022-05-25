@@ -101,8 +101,14 @@ export default class Admin extends React.Component {
         return (
             <div className='Admin'>
                 <h1>Admin</h1>
+
                 <div className='users-list'>
-                    <label className='title'>Users</label>
+                    <div className='row'>
+                        <label className='title'>Users</label>
+                        <label onClick={() => {
+                            window.location.href = '/review';
+                        }} className="posts">Посты</label>
+                    </div>
                     <div className='users'>
                         {this.state.users.map((item, i) => <div className='user'>
                             <label>{item.username}</label>

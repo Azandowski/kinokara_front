@@ -32,6 +32,14 @@ const MainScreen = (props) => (
                         ВЫЙТИ
                 </button>
                 <button 
+                    id='danger'
+                    className="nav_btn"
+                    onClick={() => {
+                        window.location.href = '/review';
+                    }}>
+                        ПОСТЫ
+                </button>
+                <button 
                     className="nav_btn"
                     onClick={() => {
                         props.scrollTo("about")
