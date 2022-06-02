@@ -185,6 +185,21 @@ class Api {
             })
         }).then(response => response.json());
     }
+
+    replyPos = (postId, value) => {
+        let url = "https://kinokara.herokuapp.com/auth/reply"
+        return fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': localStorage.getItem('token')
+            },
+            body: JSON.stringify({
+                "postId": postId,
+                "value": value,
+            })
+        }).then(response => response.json());
+    }
 }
 
 
